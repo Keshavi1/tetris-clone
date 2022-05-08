@@ -82,7 +82,7 @@ def draw_hud(screen, next_blocks):
     pg.draw.line(screen, "white", (305, 50), (390, 50))
     pg.draw.line(screen, "white", (305, 120), (390, 120))
     pg.draw.line(screen, "white", (390, 50), (390, 120))
-    font = pg.font.Font("assets/arial.ttf", 14)
+    font = pg.font.Font("arial.ttf", 14)
     
     text_surf = font.render("Next", True, "white")
     text_rect = text_surf.get_rect(topright = (360, 30))
@@ -93,7 +93,7 @@ def draw_hud(screen, next_blocks):
     render_points(font, screen, "Level", level, (380, 240), (370, 260))
 
 def game_over_hub(screen):
-    font = pg.font.Font("assets/arial.ttf", 36)
+    font = pg.font.Font("arial.ttf", 36)
     text_surf = font.render("Game Over", False, (255, 0, 150))
     text_rect = text_surf.get_rect(center = (SCR_W /2, SCR_H/2 - 100))
     screen.blit(text_surf, text_rect)
@@ -145,7 +145,7 @@ def main():
 
     timeStopped = 0
 
-    bg = pg.image.load("assets/bg.png").convert()
+    bg = pg.image.load("bg.png").convert()
     bg = pg.transform.scale(bg, (GAME_W, SCR_H))
     game_over = False
     while True:
